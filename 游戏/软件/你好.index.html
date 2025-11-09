@@ -1,0 +1,2611 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>START云游戏：腾讯官方，一键启动，让好玩触手可及！</title>
+        <meta name="description" content="START云游戏是腾讯面向未来的跨终端游戏平台，无需下载游戏，众多热门网游和单机一网打尽。现已支持网页版一键启动，点击立玩命运方舟、英雄联盟、DNF、原神、崩铁、逆战、NBA2K等精品端游，数据互通，官方背书，账号安全有保障。">
+        <meta name="keywords" content="START云游戏,腾讯云游戏,网页版云游戏,一键启动,免下载,免安装,地下城,DNF,逆战,NBA,炫舞,LOL,英雄联盟,命运方舟,云游戏,云游">
+        <meta itemprop="name" content="START云游戏：腾讯官方，一键启动，让好玩触手可及！">
+        <meta itemprop="image" content="https://start.gtimg.com/client/icon/999999/200x200_999999_1702367285.png">
+        <link rel="dns-prefetch" href="https://start.gtimg.com/">
+        <link rel="dns-prefetch" href="https://ossweb-img.qq.com/">
+        <link rel="dns-prefetch" href="https://tam.cdn-go.cn/">
+        <link rel="dns-prefetch" href="https://midas.gtimg.cn/">
+        <link rel="dns-prefetch" href="https://beacon.cdn.qq.com/">
+        <link rel="icon" href="https://start.gtimg.com/client/icon/999999/200x200_999999_1702367285.png">
+        <link rel="apple-touch-icon" href="https://start.gtimg.com/client/icon/999999/200x200_999999_1702367285.png" sizes="192x192">
+        <script src="https://beacon.cdn.qq.com/sdk/4.5.9/beacon_web.min.js"></script>
+        <script src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js"></script>
+        <script src="//start.gtimg.com/web/www/static/js/start-monitor/start-monitor-0.0.11.js" crossorigin="anonymous"></script>
+        <script crossorigin="anonymous" src="//start.gtimg.com/web/www/static/js/start_dt-stable.js"></script>
+        <script>
+            if (window.startMonitor) {
+                window.startMonitor.whiteScreenMonitor();
+            }
+            if (window.__PRERENDER_INJECTED__ !== "prerender") {
+                var e = navigator.userAgent;
+                var isMobile = e.indexOf("iPhone") > -1 || e.indexOf("Android") > -1 || e.indexOf("iPad") > -1 || "ontouchstart"in window;
+                var url = location.href;
+                if (isMobile && location.pathname === "/") {
+                    location.href = "/h5game/home" + window.location.search;
+                }
+                if (isMobile && /webgame/.test(url)) {
+                    location.href = url.replace("webgame", "h5game");
+                }
+            }
+        </script>
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-182f79bf.3ddbca35e6a03a8f0ad9.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-27545368.94bae6bab9eed00e62d3.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-3062047c.6d5a6285b0bc105998c0.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-43dd7041.1e5a457d2065dc3adc2b.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-49d0a293.27b5800ef84ce705c738.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-73969abc.94d6f32bc58359b586b9.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-7fc2cac8.53238a4c9c06f32fe0f8.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-866ab763.8f4579b83ade50828f23.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-9dd26f51.7e8145d41646f74217f6.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-d2eb5610.3781172d08c5a074a479.js" rel="preload" as="script">
+        <link crossorigin="anonymous" href="https://start.gtimg.com/web/www/webgame/assets/js/main-e96e9bea.9f7fc42c33cd85348c99.js" rel="preload" as="script">
+        <link href="https://start.gtimg.com/web/www/webgame/assets/css/main-e2ae3a23.a7c18132eabaf4de8158.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://start.gtimg.com/web/www/webgame/assets/css/818.f09be4ca701cbbfb6740.css">
+        <link rel="stylesheet" type="text/css" href="https://start.gtimg.com/web/www/webgame/assets/css/631.507a3185198f783b3cdb.css">
+        <link rel="stylesheet" type="text/css" href="https://start.gtimg.com/web/www/webgame/assets/css/home-182f79bf.19b33f52867ab6193b8a.css">
+    </head>
+    <body>
+        <div id="app" data-v-app="">
+            <!--v-if-->
+            <div class="app-back-box" data-v-04b5c4da="">
+                <div data-v-525256a8="" data-v-04b5c4da="">
+                    <img class="app-back-wrap" src="" data-v-525256a8=""></img>
+                    <div class="app-back-wrap-mask-top" data-v-525256a8=""></div>
+                    <div class="app-back-wrap-mask-main" data-v-525256a8=""></div>
+                </div>
+            </div>
+            <div class="page" style="--window-width: 1024;" data-v-65ac2972="" data-v-04b5c4da="">
+                <div class="t-header" data-v-02ca2086="">
+                    <div class="t-header-box" data-v-02ca2086="">
+                        <div class="left" data-v-02ca2086="">
+                            <a href="/webgame/home" data-v-02ca2086="">
+                                <img class="logo" src="https://start.gtimg.com/web/www/webgame/assets/img/911195daa338ca1b3a68.png" alt="" data-v-02ca2086=""></img>
+                            </a>
+                            <div class="nav" data-v-02ca2086="">
+                                <a href="/webgame/home" class="nav-item select" data-v-02ca2086="">首页</a>
+                                <a href="/webgame/list" class="nav-item search-hiden" data-v-02ca2086="">游戏库</a>
+                                <a href="/download.html" class="nav-item search-hiden" data-v-02ca2086="">下载中心</a>
+                                <div class="more-box search-hiden" data-v-02ca2086="">
+                                    <img class="more-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANlSURBVHgBzZq9ctpAFIWv+DVge+IJkzJ18g6pqeOad4hrP4Fr8g5xa7fp8w5J7TKD4zCA+BGCnCPvagQWGMRdRd/MeldCRvdo79697MoTBVarlYfqBKWKUjZ1CcVLXBaaEpgy9zwvlCPxJCPG6FOUmilZoJCxHCHmYAEJw1tyxANIYYIyPFTIQQbA+DPRN3yTEUQM9714L0NgOP36Qp59Ow/YC4/79MarAmB8E9W5uH3qaSxR/kLEbNdFO40yLnMq/5edLrVVQEGMt2wVUUo7CePrUhzjySlsaqR98EJAYsAWjXNj2xppPfBW8h+w+0BbL9JOxhi/L0txqcLGNdeOBZjuKZLfb6NlsoGIZA+ciQLT6bQzn88/iTtoc8seVPjHPP2GHMlkMuniuzrL5dJH2HuoVqsP4gb2whj3WNkeyJpNroEv9U2ziV64QmmLG+JesAJUfL/ZbN6Vy+XvbOPptIMguOZpcQPnKikZ96mIEvV6/Rbf+YttioBbfRE31DiY2QMq7pOk1Wr1YHyfbdzk43g87oobTijARYrsNxqNGysCdWc2m30WfSquBJB+pVLpoY4GdhiGlw7Ca5kCnM28DKMQ8c0eLxaLLgb2e9Gj5lRAdIda7Qeqe3OoHV69kuQAwitDa+RKjEwY2FquVMpFAELplZj5AAJ+ItTeixIUsBKHmPTiA9uo+4hOX0URCliKI3zfv2RuxDaNx6C+EeNKSoQUsBAHmJBpY7+PwdxD6YsuCycCGCoZMu0xQ6mjzDSggEB0acP4eNAiubszodQFUQ/MRI8mBu01/D2K88xMNSNOCvMSwhoH8VwUYLi0xptweSvuCLj0aOcBlV6grzOBcxEuU+Cy/PPyCW5IIe9EZzmljQgkDiLOJr/ZA7HBZrlC5Yd9DvA394CNZCrBCcbprKzIyDZiAWYwj6T4rO3irCVz+IACnMzMSoTGxpi0bPSPFNOVaNPj5skXAkz3DKR4PKVtOaX+HsCF0Y6hFIfhtq2m17aYihBah5t+n2SfTT7uwL8RyX3PgD4/MN6wlUO2WbnxkdfeATPkJ5Vt1iQ5uBSf+miXy2yS5VUDuxGiuWgbGY4SLZkf8o/HvOxBIVxX5TJ31tU9Rham8gcbblEZmAkxXOW2r9wkV7xpHP15kSjTrEYn+QdXrFfIIdXX8QAAAABJRU5ErkJggg==" data-v-02ca2086=""></img>
+                                    <div class="more-hover-box" data-v-02ca2086="">
+                                        <div class="more-hover-container" data-v-02ca2086="">
+                                            <a href="/tv/index.html" class="nav-item" data-v-02ca2086="">认证电视</a>
+                                            <div class="border" data-v-02ca2086=""></div>
+                                            <a href="/engine/index.html" class="nav-item" data-v-02ca2086="">START ENGINE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center-search" data-v-02ca2086="">
+                            <div class="search-box" data-v-e7f29f58="" data-v-4d7818ea="" data-v-02ca2086="">
+                                <div class="btn-search icon icon-search" data-v-e7f29f58=""></div>
+                                <input class="search-input" type="text" placeholder="" data-v-e7f29f58=""></input>
+                                <div class="button-box" data-v-e7f29f58="">
+                                    <div class="button clear" data-v-e7f29f58=""></div>
+                                    <div class="button search" data-v-e7f29f58="">搜索</div>
+                                </div>
+                                <div class="search-content-box" data-v-e7f29f58="" style="display: none;">
+                                    <div class="search-bg" data-v-e7f29f58="">
+                                        <div class="search-bg-color" data-v-e7f29f58=""></div>
+                                    </div>
+                                    <div class="search-content" data-v-e7f29f58="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right" data-v-02ca2086="">
+                            <div class="btn-list" data-v-02ca2086="">
+                                <div class="btn-item notice empty" data-v-02ca2086="">
+                                    <!--v-if-->
+                                    <div class="name" data-v-02ca2086="">公告</div>
+                                    <div class="notice-box" data-v-02ca2086="">
+                                        <div class="icon icon-bubble" data-v-02ca2086=""></div>
+                                        <div class="notice-text" data-v-02ca2086="">
+                                            <div class="notice-text-hiden" data-v-02ca2086=""></div>
+                                            <div class="notice-text-content" style="animation-duration: 5s;" data-v-02ca2086=""></div>
+                                        </div>
+                                        <div class="icon icon-close" data-v-02ca2086=""></div>
+                                    </div>
+                                </div>
+                                <div class="btn-item" data-v-02ca2086="">
+                                    <div class="icon icon-vip" data-v-02ca2086=""></div>
+                                    <div class="name vip" data-v-02ca2086="">会员</div>
+                                </div>
+                                <div class="btn-item" data-v-02ca2086="">
+                                    <div class="icon icon-ware" data-v-02ca2086=""></div>
+                                    <div class="name" data-v-02ca2086="">福利</div>
+                                    <!--v-if-->
+                                </div>
+                                <div class="btn-item" data-v-02ca2086="">
+                                    <div class="icon icon-assets" data-v-02ca2086=""></div>
+                                    <div class="name" data-v-02ca2086="">资产</div>
+                                </div>
+                                <div class="btn-item" data-v-02ca2086="">
+                                    <div class="icon icon-msg" data-v-02ca2086=""></div>
+                                    <div class="name" data-v-02ca2086="">消息</div>
+                                    <div class="red-pointer-box" data-v-02ca2086="">
+                                        <div class="unread-pointer-wrap" data-v-29c78efe="" data-v-02ca2086="">
+                                        <!--v-if-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-item" data-v-02ca2086="">
+                                    <div class="icon icon-feedback" data-v-02ca2086=""></div>
+                                    <div class="name" data-v-02ca2086="">反馈</div>
+                                </div>
+                            </div>
+                            <div class="user-info" data-v-02ca2086="">
+                                <img class="avatar" src="https://start.gtimg.com/web/www/webgame/assets/img/522cf7346f8bebba7e32.png" alt="" data-v-02ca2086=""></img>
+                                <img class="not-login" src="https://start.gtimg.com/web/www/webgame/assets/img/6e7452688d26f1c2bae6.png" alt="" data-v-02ca2086=""></img>
+                                <div class="user-info-pop" data-v-02ca2086="">
+                                    <div class="login-content" data-v-02ca2086="">
+                                        <div class="user-info-pop-title" data-v-02ca2086="">你登录后可以</div>
+                                        <div class="user-info-pop-list" data-v-02ca2086="">
+                                            <div class="user-info-pop-item cloud" data-v-02ca2086="">一键畅玩热门大作</div>
+                                            <div class="user-info-pop-item gift" data-v-02ca2086="">领取专属游戏福利</div>
+                                            <div class="user-info-pop-item point" data-v-02ca2086="">赚取积分兑换时长</div>
+                                        </div>
+                                        <div class="btn" data-v-02ca2086="">立即登录</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--v-if-->
+                <div class="index-banner-wrap index-banner" data-v-05ac6be3="" data-v-65ac2972="">
+                    <div class="banner-item-wrap active banner-item" data-v-5bb33d78="" data-v-05ac6be3="">
+                        <div class="banner-img" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;2160x736_1761796490899_1761796634.compressed.png);" data-v-5bb33d78=""></div>
+                        <video class="banner-video" poster="https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;2160x736_1761796490899_1761796634.compressed.png" muted="" data-v-5bb33d78="" style=""></video>
+                        <div class="shadow" data-v-5bb33d78=""></div>
+                        <div class="tags" data-v-5bb33d78=""></div>
+                        <div class="logo" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;600x300_1761796351777_1761796472.compressed.png);" data-v-5bb33d78=""></div>
+                        <div class="title" data-v-5bb33d78="">11月1日登录START云游戏 领5000NZ点购物券！</div>
+                        <div class="btns" data-v-5bb33d78="">
+                            <a class="button" href="/webgame/gamedetail/600027" data-v-5bb33d78="">立即参与</a>
+                            <div class="control btn-muted" data-v-5bb33d78=""></div>
+                        </div>
+                    </div>
+                    <div class="banner-item-wrap active banner-item" data-v-5bb33d78="" data-v-05ac6be3="">
+                        <div class="banner-img" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;2160x736_1761652526775_1761653135.compressed.png);" data-v-5bb33d78=""></div>
+                        <video class="banner-video" poster="https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;2160x736_1761652526775_1761653135.compressed.png" muted="" data-v-5bb33d78="" style=""></video>
+                        <div class="shadow" data-v-5bb33d78=""></div>
+                        <div class="tags" data-v-5bb33d78=""></div>
+                        <div class="logo" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;600x300_1761653141152_1761653152.compressed.png);" data-v-5bb33d78=""></div>
+                        <div class="title" data-v-5bb33d78="">云游戏限免7天，新用户注册最高得600抽！</div>
+                        <div class="btns" data-v-5bb33d78="">
+                            <a class="button" href="/webgame/gamedetail/600702" data-v-5bb33d78="">立即前往</a>
+                            <div class="control btn-muted" data-v-5bb33d78=""></div>
+                        </div>
+                    </div>
+                    <div class="banner-item-wrap active banner-item" data-v-5bb33d78="" data-v-05ac6be3="">
+                        <div class="banner-img" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;2160x736_1761640148139_1761640165.compressed.png);" data-v-5bb33d78=""></div>
+                        <video class="banner-video" poster="https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;2160x736_1761640148139_1761640165.compressed.png" muted="" data-v-5bb33d78="" style=""></video>
+                        <div class="shadow" data-v-5bb33d78=""></div>
+                        <div class="tags" data-v-5bb33d78=""></div>
+                        <div class="logo" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;601x300_1761640148139_1761640158.compressed.png);" data-v-5bb33d78=""></div>
+                        <div class="title" data-v-5bb33d78="">预约活动现已开启！</div>
+                        <div class="btns" data-v-5bb33d78="">
+                            <a class="button" href="/webgame/gamedetail/600772" data-v-5bb33d78="">前往预约</a>
+                            <div class="control btn-muted" data-v-5bb33d78=""></div>
+                        </div>
+                    </div>
+                    <div class="banner-item-wrap active banner-item" data-v-5bb33d78="" data-v-05ac6be3="">
+                        <div class="banner-img" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;1080x368_1761710460761_1761710690.compressed.jpg);" data-v-5bb33d78=""></div>
+                        <video class="banner-video" poster="https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;1080x368_1761710460761_1761710690.compressed.jpg" muted="" data-v-5bb33d78="" style=""></video>
+                        <div class="shadow" data-v-5bb33d78=""></div>
+                        <div class="tags" data-v-5bb33d78=""></div>
+                        <div class="logo" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;200x100_1759197153717_1759197161.compressed.png);" data-v-5bb33d78=""></div>
+                        <div class="title" data-v-5bb33d78="">「拾光季」开启，流派比拼火热来袭！</div>
+                        <div class="btns" data-v-5bb33d78="">
+                            <a class="button" href="/webgame/gamedetail/200201" data-v-5bb33d78="">立即参与</a>
+                            <div class="control btn-muted" data-v-5bb33d78=""></div>
+                        </div>
+                    </div>
+                    <div class="banner-item-wrap active banner-item" data-v-5bb33d78="" data-v-05ac6be3="">
+                        <div class="banner-img" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;1080x368_1761620820713_1761620828.compressed.png);" data-v-5bb33d78=""></div>
+                        <video class="banner-video" poster="https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;1080x368_1761620820713_1761620828.compressed.png" muted="" data-v-5bb33d78="" style=""></video>
+                        <div class="shadow" data-v-5bb33d78=""></div>
+                        <div class="tags" data-v-5bb33d78=""></div>
+                        <div class="logo" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;200x100_1761620815312_1761620820.compressed.png);" data-v-5bb33d78=""></div>
+                        <div class="title" data-v-5bb33d78="">终极角逐测试招募现已开启！</div>
+                        <div class="btns" data-v-5bb33d78="">
+                            <a class="button" href="/webgame/gamedetail/600748" data-v-5bb33d78="">前往招募</a>
+                            <div class="control btn-muted" data-v-5bb33d78=""></div>
+                        </div>
+                    </div>
+                    <div class="banner-item-wrap active banner-item" data-v-5bb33d78="" data-v-05ac6be3="">
+                        <div class="banner-img" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;1080x368_1761617697746_1761617772.compressed.jpg);" data-v-5bb33d78=""></div>
+                        <video class="banner-video" poster="https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;1080x368_1761617697746_1761617772.compressed.jpg" muted="" data-v-5bb33d78="" style=""></video>
+                        <div class="shadow" data-v-5bb33d78=""></div>
+                        <div class="tags" data-v-5bb33d78=""></div>
+                        <div class="logo" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;400x200_1761617772560_1761617779.compressed.png);" data-v-5bb33d78=""></div>
+                        <div class="title" data-v-5bb33d78="">《天堂2：盟约》保密测试招募！</div>
+                        <div class="btns" data-v-5bb33d78="">
+                            <a class="button" href="/webgame/gamedetail/" data-v-5bb33d78="">前往招募</a>
+                            <div class="control btn-muted" data-v-5bb33d78=""></div>
+                        </div>
+                    </div>
+                    <!--v-if-->
+                </div>
+                <div class="t-fixed-tool" data-v-6dd9e952="" data-v-65ac2972="">
+                    <div class="t-fixed-tool-box" data-v-6dd9e952="">
+                        <div class="t-fixed-tool-item" data-v-6dd9e952="">
+                            <div class="icon icon-phone" data-v-6dd9e952="">
+                                <div class="t-fixed-tool-pop" data-v-6dd9e952="">
+                                <!--v-if-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-fixed-tool-item" data-v-6dd9e952="">
+                            <div class="icon icon-collect" data-v-6dd9e952="">
+                                <div class="t-fixed-tool-pop" data-v-6dd9e952="">
+                                    <div class="content" data-v-6dd9e952="">收藏网页</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-fixed-tool-item" data-v-6dd9e952="">
+                            <div class="icon icon-desktop" data-v-6dd9e952="">
+                                <div class="t-fixed-tool-pop" data-v-6dd9e952="">
+                                    <div class="content" data-v-6dd9e952="">添加桌面快捷方式</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-fixed-tool-item" data-v-6dd9e952="">
+                            <div class="icon icon-arrow-top" data-v-6dd9e952="">
+                                <div class="t-fixed-tool-pop" data-v-6dd9e952="">
+                                    <div class="content" data-v-6dd9e952="">回到顶部</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--v-if-->
+                <div class="content" data-v-65ac2972="">
+                    <!--v-if-->
+                    <div class="index-game-wrap" data-v-c190a620="" data-v-65ac2972="">
+                        <div class="index-game-lable" data-v-c190a620="">
+                            <div class="title" data-v-c190a620="">热游上新</div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-c190a620="">
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;1920x1200_1761796308104_1761796347.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">逆战</div>
+                                        <div class="game-desc" data-v-b3460264="">11月1日登录逆战 领5000NZ点购物券！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600027" data-v-b3460264="">逆战</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;1920x1200_1761652431670_1761652479.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">胜利女神：新的希望</div>
+                                        <div class="game-desc" data-v-b3460264="">云游戏限免7天，新用户注册最高得600抽！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600702" data-v-b3460264="">胜利女神：新的希望</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;home&#47;960x600_undefined_1759634073.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">【高配】流放之路：降临</div>
+                                        <div class="game-desc" data-v-b3460264="">高配版现已正式上线！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600757" data-v-b3460264="">【高配】流放之路：降临</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;960x600_1761183385458_1761183425.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">英雄联盟</div>
+                                        <div class="game-desc" data-v-b3460264="">S7.5赛季限时返场</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600015" data-v-b3460264="">英雄联盟</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-rank-wrap" data-v-e17e3ae8="" data-v-65ac2972="">
+                        <div class="index-container" data-v-e17e3ae8="">
+                            <div class="rank-box" data-v-e17e3ae8="">
+                                <div class="rank-list" data-v-e17e3ae8="">
+                                    <div class="title" data-v-e17e3ae8="">热玩排行</div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600016" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">地下城与勇士：创新世纪</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">98.6% 推荐率</div>
+                                        </div>
+                                    </div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600036" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">QQ炫舞</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">87.8% 推荐率</div>
+                                        </div>
+                                    </div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600027" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">逆战</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">93.9% 推荐率</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--v-if-->
+                            </div>
+                            <div class="rank-box" data-v-e17e3ae8="">
+                                <div class="rank-list" data-v-e17e3ae8="">
+                                    <div class="title" data-v-e17e3ae8="">畅销排行</div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600018" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">NBA2K ONLINE 2</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">91.7% 推荐率</div>
+                                        </div>
+                                    </div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600527" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">和平精英模拟器</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">98.3% 推荐率</div>
+                                        </div>
+                                    </div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600015" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">英雄联盟（云顶新赛季）</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">93% 推荐率</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--v-if-->
+                            </div>
+                            <div class="rank-box" data-v-e17e3ae8="">
+                                <div class="rank-list" data-v-e17e3ae8="">
+                                    <div class="title" data-v-e17e3ae8="">新游排行</div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600739" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">流放之路：降临</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">100% 推荐率</div>
+                                        </div>
+                                    </div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/600185" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">三角洲行动(PC版)</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">90% 推荐率</div>
+                                        </div>
+                                    </div>
+                                    <div class="rank-item" data-v-ddf6f596="" data-v-e17e3ae8="">
+                                        <div class="image" style="background-image: url();" data-v-ddf6f596=""></div>
+                                        <div class="content" data-v-ddf6f596="">
+                                            <a class="name" href="/webgame/gamedetail/200161" data-v-ddf6f596="">
+                                                <div class="name-txt" data-v-ddf6f596="">崩坏：星穹铁道(PC版)</div>
+                                            </a>
+                                            <div class="recommend" data-v-ddf6f596="">100% 推荐率</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--v-if-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-game-wrap" data-v-c190a620="" data-v-65ac2972="">
+                        <div class="index-game-lable" data-v-c190a620="">
+                            <div class="title" data-v-c190a620="">热门游戏</div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-c190a620="">
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;portrait&#47;960x600_600702_1754463154.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">胜利女神：新的希望</div>
+                                        <div class="game-desc" data-v-b3460264="">后末世壮阔故事，为人类的未来而战！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600702" data-v-b3460264="">胜利女神：新的希望</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;961x601_200047_1736164171.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">原神-纳塔开放</div>
+                                        <div class="game-desc" data-v-b3460264="">全新5.5版本开启！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200047" data-v-b3460264="">原神-纳塔开放</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_400186_1736224559.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">【高配】黑神话：悟空</div>
+                                        <div class="game-desc" data-v-b3460264="">重启西游之路！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/400186" data-v-b3460264="">【高配】黑神话：悟空</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;200602&#47;960x600_200602_1737708596.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">诛仙世界</div>
+                                        <div class="game-desc" data-v-b3460264="">下一个世界，是诛仙世界！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200602" data-v-b3460264="">诛仙世界</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;961x601_600157_1735805744.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">NBA2K Online</div>
+                                        <div class="game-desc" data-v-b3460264="">NBA官方授权，真实比赛体验！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600157" data-v-b3460264="">NBA2K Online</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600160_1750838179.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">QQ三国</div>
+                                        <div class="game-desc" data-v-b3460264="">十八周年庆典，全新版本“青春十八年”！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600160" data-v-b3460264="">QQ三国</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600037_1735808681.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">QQ炫舞2</div>
+                                        <div class="game-desc" data-v-b3460264="">520星愿绮想，绯渊烬歌</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600037" data-v-b3460264="">QQ炫舞2</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_400159_1736230600.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">命运方舟</div>
+                                        <div class="game-desc" data-v-b3460264="">全民皆爽的顶级冒险乐园</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/400159" data-v-b3460264="">命运方舟</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600013_1735871579.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">足球在线4（FC ONLINE）</div>
+                                        <div class="game-desc" data-v-b3460264="">新版本神奇小将，全速启动！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600013" data-v-b3460264="">足球在线4（FC ONLINE）</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;961x601_600016_1752134025.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">地下城与勇士：创新世纪</div>
+                                        <div class="game-desc" data-v-b3460264="">刀剑神域联动限时返场！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600016" data-v-b3460264="">地下城与勇士：创新世纪</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;960x600_1737034224241_1737034244.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">剑灵</div>
+                                        <div class="game-desc" data-v-b3460264="">十一周年庆生！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/699999" data-v-b3460264="">剑灵</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737034210736_1737034224.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">御龙在天</div>
+                                        <div class="game-desc" data-v-b3460264="">九州之内皆兄弟！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600144" data-v-b3460264="">御龙在天</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-activity-wrap" data-v-47e0596b="" data-v-65ac2972="">
+                        <div class="index-activity-lable" data-v-47e0596b="">
+                            <div class="title" data-v-47e0596b="">热门活动</div>
+                        </div>
+                        <div class="index-container" data-v-47e0596b="">
+                            <div class="main-activity" data-v-47e0596b="">
+                                <div class="main-activity-wrap" data-v-e373c3b8="" data-v-47e0596b="">
+                                    <div class="main-activity-item-wrap" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;976x1320_1761796826837_1761796862.compressed.png);" data-v-3dd44684="" data-v-e373c3b8="">
+                                        <div class="logo" style="background-image: url();" data-v-3dd44684=""></div>
+                                        <div class="content" data-v-3dd44684="">
+                                            <div class="title" data-v-3dd44684="">逆战</div>
+                                            <div class="desc" data-v-3dd44684="">11月1日登录逆战 领5000NZ点购物券！</div>
+                                            <div class="tip" data-v-3dd44684="">结束时间：2025 &#47;11 &#47;30</div>
+                                        </div>
+                                    </div>
+                                    <div class="control" data-v-e373c3b8="">
+                                        <div class="slide slide-prev disable" data-v-e373c3b8=""></div>
+                                        <div class="slide slide-next disable" data-v-e373c3b8=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-list" data-v-47e0596b="">
+                                <div class="index-item-box" data-v-47e0596b="">
+                                    <div class="activity-item-card-wrap" data-v-91116fbc="" data-v-47e0596b="">
+                                        <div class="activity-image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;1280x800_1761796940571_1761796965.compressed.png);" data-v-91116fbc=""></div>
+                                        <div class="activity-container" data-v-91116fbc="">
+                                            <div class="activity-label" data-v-91116fbc="">胜利女神：新的希望</div>
+                                            <div class="activity-desc" data-v-91116fbc="">云游戏限免7天，新用户注册最高得600抽！</div>
+                                            <div class="tip" data-v-91116fbc="">结束时间：2025 &#47;11 &#47;29</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index-item-box" data-v-47e0596b="">
+                                    <div class="activity-item-card-wrap" data-v-91116fbc="" data-v-47e0596b="">
+                                        <div class="activity-image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;720x450_1761711495439_1761718320.compressed.png);" data-v-91116fbc=""></div>
+                                        <div class="activity-container" data-v-91116fbc="">
+                                            <div class="activity-label" data-v-91116fbc="">会员福利升级</div>
+                                            <div class="activity-desc" data-v-91116fbc="">海量游戏道具等你来拿！</div>
+                                            <div class="tip" data-v-91116fbc="">结束时间：2025 &#47;12 &#47;31</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index-item-box" data-v-47e0596b="">
+                                    <div class="activity-item-card-wrap" data-v-91116fbc="" data-v-47e0596b="">
+                                        <div class="activity-image" style="background-image: url(https:&#47;&#47;imgcdn.start.qq.com&#47;cdn&#47;win.client&#47;imgres&#47;banner-bg&#47;bbj0927-2.png);" data-v-91116fbc=""></div>
+                                        <div class="activity-container" data-v-91116fbc="">
+                                            <div class="activity-label" data-v-91116fbc="">时长爆爆鸡</div>
+                                            <div class="activity-desc" data-v-91116fbc="">保底1小时，最高可得20小时！</div>
+                                            <div class="tip" data-v-91116fbc="">活动时间：长期</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-game-wrap" data-v-c190a620="" data-v-65ac2972="">
+                        <div class="index-game-lable" data-v-c190a620="">
+                            <div class="title" data-v-c190a620="">云电脑分享</div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-c190a620="">
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;200693&#47;960x600_200693_1742805058.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">尘白禁区（云电脑）</div>
+                                        <div class="game-desc" data-v-b3460264="">轻科幻，重视觉，舔屏之作！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200693" data-v-b3460264="">尘白禁区（云电脑）</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;300188&#47;960x600_300188_1736855041.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">黑神话：悟空（steam）</div>
+                                        <div class="game-desc" data-v-b3460264="">云电脑支持steam玩家西行之路</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/300188" data-v-b3460264="">黑神话：悟空（steam）</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_300633_1742811759.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">极限竞速：地平线4（云电脑）</div>
+                                        <div class="game-desc" data-v-b3460264="">与同好分享日夜、气候与四季变化的世界，尽情奔驰！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/300633" data-v-b3460264="">极限竞速：地平线4（云电脑）</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;600526&#47;960x600_600526_1737549376.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">极品飞车：集结高清模拟器（云电脑）</div>
+                                        <div class="game-desc" data-v-b3460264="">全新版本，热湾全明星！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600526" data-v-b3460264="">极品飞车：集结高清模拟器（云电脑）</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-game-wrap" data-v-c190a620="" data-v-65ac2972="">
+                        <div class="index-game-lable" data-v-c190a620="">
+                            <div class="title" data-v-c190a620="">精选网游</div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-c190a620="">
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600725_1752708892.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">星痕共鸣</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600725" data-v-b3460264="">星痕共鸣</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600190_1735809501.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">黑色沙漠</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600190" data-v-b3460264="">黑色沙漠</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600695_1743578727.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">剑灵2</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600695" data-v-b3460264="">剑灵2</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_400170_1735810719.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">全境封锁2</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/400170" data-v-b3460264="">全境封锁2</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-article-wrap" data-v-483b6e14="" data-v-65ac2972="">
+                        <div class="index-article-lable" data-v-483b6e14="">
+                            <div class="title" data-v-483b6e14=""></div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-483b6e14="">
+                            <div class="article-box" data-v-483b6e14="">
+                                <div class="index-item-box" data-v-483b6e14="">
+                                    <div class="featured-list-wrap" data-v-65d2c6ff="" data-v-483b6e14="">
+                                        <a href="/webgame/gamearticle/20250320111128851172" class="title" data-v-65d2c6ff="">真·三国无双：起源</a>
+                                        <a href="/webgame/gamearticle/20250320111128851172" class="sub-title" data-v-65d2c6ff="">正版续作，再次体验经典割草快感！</a>
+                                        <div class="article-with-start-router-wrap" data-v-65d2c6ff="">
+                                            <div class="desc" data-v-65d2c6ff="">&lt;span style=&#39;color:#1CEB98;&#39;&gt;&lt;a href=&#39;start:&#47;&#47;start.tencent.com &#47;quick_computer_desk?w_gameid=300673 &#39;&gt;#《真·三国无双：起源》 &lt;&#47;a &gt;&lt;&#47;span &gt;正版续作，再次体验经典割草快感！</div>
+                                        </div>
+                                        <div class="img-list" data-v-65d2c6ff="">
+                                            <div class="vertical-image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;300673&#47;412x548_300673_1737115116.compressed.png);" data-v-65d2c6ff=""></div>
+                                            <div class="horizontal-image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;banner&#47;1920x1080_300673_1737114944.compressed.jpg);" data-v-65d2c6ff=""></div>
+                                        </div>
+                                        <div class="author-info" data-v-65d2c6ff="">
+                                            <div class="avatar" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;startnews&#47;gameauthor&#47;avatar.580cb9144efef58f550346143911a6e7.compressed.png);" data-v-65d2c6ff=""></div>
+                                            <div class="author" data-v-65d2c6ff="">帅得被人砍</div>
+                                        </div>
+                                    </div>
+                                    <div class="featured-list-wrap" data-v-a010cd7e="" data-v-483b6e14="">
+                                        <div class="title" data-v-a010cd7e="">新游推荐</div>
+                                        <div class="featured-list" data-v-a010cd7e="">
+                                            <div class="featured-list-item" data-v-a010cd7e="">
+                                                <div class="article-with-start-router-wrap" data-v-a010cd7e="">
+                                                    <div class="desc" data-v-a010cd7e="">&lt;span style=&#39;color:#1CEB98;&#39;&gt;&lt;a href=&#39;start:&#47;&#47;start.tencent.com &#47;quick_computer_desk?w_gameid=600191 &#39;&gt;#鸣潮（云电脑） &lt;&#47;a &gt;&lt;&#47;span &gt;开放世界游戏类，唯一能和《原神》掰手腕的佳作！</div>
+                                                </div>
+                                                <div class="author-info" data-v-a010cd7e="">
+                                                    <div class="avatar" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;startnews&#47;gameauthor&#47;avatar.86ad170c536129108d1004a6bd6465c0.compressed.png);" data-v-a010cd7e=""></div>
+                                                    <a href="/webgame/gamearticle/20250314171627202886" class="author" data-v-a010cd7e="">隐隐约约</a>
+                                                </div>
+                                            </div>
+                                            <div class="featured-list-item" data-v-a010cd7e="">
+                                                <div class="article-with-start-router-wrap" data-v-a010cd7e="">
+                                                    <div class="desc" data-v-a010cd7e="">&lt;span style=&#39;color:#1CEB98;&#39;&gt;&lt;a href=&#39;start:&#47;&#47;start.tencent.com &#47;quick_computer_desk?w_gameid=300667 &#39;&gt;#DOTA2（云电脑） &lt;&#47;a &gt;&lt;&#47;span &gt;热烈祝贺XG获得2025年BB杯决赛冠军！</div>
+                                                </div>
+                                                <div class="author-info" data-v-a010cd7e="">
+                                                    <div class="avatar" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;startnews&#47;gameauthor&#47;avatar.3efd0f6a39914ae5d010e59b2064c705.compressed.png);" data-v-a010cd7e=""></div>
+                                                    <a href="/webgame/gamearticle/20250320120453178798" class="author" data-v-a010cd7e="">ych</a>
+                                                </div>
+                                            </div>
+                                            <div class="featured-list-item" data-v-a010cd7e="">
+                                                <div class="article-with-start-router-wrap" data-v-a010cd7e="">
+                                                    <div class="desc" data-v-a010cd7e="">&lt;span style=&#39;color:#1CEB98;&#39;&gt;&lt;a href=&#39;start:&#47;&#47;start.tencent.com &#47;quick_computer_desk?w_gameid=300692 &#39;&gt;#R.E.P.O.（云电脑） &lt;&#47;a &gt;&lt;&#47;span &gt;画质粗糙内容猎奇的“多人运动”游戏，是怎么狂卖180万套，96%好评率的？</div>
+                                                </div>
+                                                <div class="author-info" data-v-a010cd7e="">
+                                                    <div class="avatar" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;startnews&#47;gameauthor&#47;avatar.580cb9144efef58f550346143911a6e7.compressed.png);" data-v-a010cd7e=""></div>
+                                                    <a href="/webgame/gamearticle/20250110163108837602" class="author" data-v-a010cd7e="">帅得被人砍</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-featured-wrap" data-v-eb72cda6="" data-v-65ac2972="">
+                        <div class="index-featured-lable" data-v-eb72cda6="">
+                            <div class="title" data-v-eb72cda6="">精选系列作品</div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-eb72cda6="">
+                            <div class="index-item-box" data-v-eb72cda6="">
+                                <div class="featured-list-wrap" data-v-40ca6e08="" data-v-eb72cda6="">
+                                    <div class="title" data-v-40ca6e08="">多人射击</div>
+                                    <div class="list" data-v-40ca6e08="">
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737033511193_1737033528.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/400154" data-v-5f039fb6="">生死狙击2</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">星耀无限新春版本</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;960x600_1737033529180_1737033550.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/400168" data-v-5f039fb6="">卡拉彼丘</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">击穿次元多维枪战</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737034045624_1737034070.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/600012" data-v-5f039fb6="">枪神纪</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">巳蛇迎春 祥灵悦歌</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-eb72cda6="">
+                                <div class="featured-list-wrap" data-v-40ca6e08="" data-v-eb72cda6="">
+                                    <div class="title" data-v-40ca6e08="">角色扮演</div>
+                                    <div class="list" data-v-40ca6e08="">
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_400000_1735812245.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/400000" data-v-5f039fb6="">星际战甲</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">身披战甲，鏖战星际！</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;400174&#47;960x600_400174_1735809221.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/400174" data-v-5f039fb6="">古魂</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">暗黑风格，「魂之刃」系列第二代</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_200065_1735809438.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/200065" data-v-5f039fb6="">光之子</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">一个奇妙的魔法世界</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-eb72cda6="">
+                                <div class="featured-list-wrap" data-v-40ca6e08="" data-v-eb72cda6="">
+                                    <div class="title" data-v-40ca6e08="">二次元</div>
+                                    <div class="list" data-v-40ca6e08="">
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;961x601_200047_1736164171.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/200047" data-v-5f039fb6="">原神-纳塔开放</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">全新5.3版本「炽烈的还魂诗」现已推出！</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;960x600_1741748898477_1741748978.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/200183" data-v-5f039fb6="">绝区零</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">全新1.6版本现已推出！</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_400176_1735806957.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/400176" data-v-5f039fb6="">崩坏3（WeGame版）</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">米哈游自研科幻冒险动作游戏！</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-eb72cda6="">
+                                <div class="featured-list-wrap" data-v-40ca6e08="" data-v-eb72cda6="">
+                                    <div class="title" data-v-40ca6e08="">竞速休闲</div>
+                                    <div class="list" data-v-40ca6e08="">
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;400033&#47;960x600_400033_1735808112.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/400033" data-v-5f039fb6="">QQ飞车（PC）</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">体验最爽快的虚拟赛车竞技！</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;200163&#47;960x600_200163_1735809156.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/200163" data-v-5f039fb6="">大富翁11</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">开启别样人生！</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-item" data-v-5f039fb6="" data-v-40ca6e08="">
+                                            <div class="image" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_200201_1745903247.compressed.png);" data-v-5f039fb6=""></div>
+                                            <div class="content" data-v-5f039fb6="">
+                                                <a class="name" href="/webgame/gamedetail/200201" data-v-5f039fb6="">无限暖暖</a>
+                                                <a class="nainfome" href="/webgame/gamearticle/" style="visibility: visible;" data-v-5f039fb6="">闪耀吧！派对之王」限时活动开放！</a>
+                                                <div class="recommend" data-v-5f039fb6="">% 推荐率</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-game-wrap" data-v-c190a620="" data-v-65ac2972="">
+                        <div class="index-game-lable" data-v-c190a620="">
+                            <div class="title" data-v-c190a620="">精选单机</div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-c190a620="">
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737547955429_1737547985.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">轩辕剑叁外传之天之痕</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200099" data-v-b3460264="">轩辕剑叁外传之天之痕</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;960x600_1737539079533_1737539095.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">轩辕剑外传-穹之扉</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200043" data-v-b3460264="">轩辕剑外传-穹之扉</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_200041_1735809321.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">古剑奇谭三</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200041" data-v-b3460264="">古剑奇谭三</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;200049&#47;960x600_200049_1735810948.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">拳皇14</div>
+                                        <div class="game-desc" data-v-b3460264=""></div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200049" data-v-b3460264="">拳皇14</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-game-wrap" data-v-c190a620="" data-v-65ac2972="">
+                        <div class="index-game-lable" data-v-c190a620="">
+                            <div class="title" data-v-c190a620="">精品游戏</div>
+                            <!--v-if-->
+                        </div>
+                        <div class="index-container" data-v-c190a620="">
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_699998_1735810049.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">流放之路</div>
+                                        <div class="game-desc" data-v-b3460264="">体验绝佳的战斗爽快感与玩法多样性！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/699998" data-v-b3460264="">流放之路</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600707_1744792308.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">群星纪元</div>
+                                        <div class="game-desc" data-v-b3460264="">异星机甲战争策略大作！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600707" data-v-b3460264="">群星纪元</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_200046_1735808759.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">不思议的皇冠</div>
+                                        <div class="game-desc" data-v-b3460264="">经历死亡与成长的轮回，对抗无尽深渊！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200046" data-v-b3460264="">不思议的皇冠</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737536713940_1737536734.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">萌宝比特</div>
+                                        <div class="game-desc" data-v-b3460264="">多人合作可爱休闲类游戏</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200091" data-v-b3460264="">萌宝比特</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;400188&#47;960x600_400188_1736224405.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">黑神话：悟空</div>
+                                        <div class="game-desc" data-v-b3460264="">天命人，西行之路已经开启</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/400188" data-v-b3460264="">黑神话：悟空</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737532895700_1737532910.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">装甲战争</div>
+                                        <div class="game-desc" data-v-b3460264="">风靡全球的现代军武题材网游！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200150" data-v-b3460264="">装甲战争</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737548566835_1737548587.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">全民街篮</div>
+                                        <div class="game-desc" data-v-b3460264="">无数值养成篮球竞技端游</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/400175" data-v-b3460264="">全民街篮</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737531665505_1737531874.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">轩辕传奇3</div>
+                                        <div class="game-desc" data-v-b3460264="">S8赛季大版本震撼来袭！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600145" data-v-b3460264="">轩辕传奇3</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737532355647_1737532368.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">创世战车</div>
+                                        <div class="game-desc" data-v-b3460264="">穿越霓虹深渊！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/400173" data-v-b3460264="">创世战车</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737533092835_1737533111.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">怪物之家</div>
+                                        <div class="game-desc" data-v-b3460264="">恐怖幻想题材的手绘风格解密游戏</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200132" data-v-b3460264="">怪物之家</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;960x600_1737533111315_1737533135.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">雨城</div>
+                                        <div class="game-desc" data-v-b3460264="">水彩绘本风格的第三人称解谜游戏</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200131" data-v-b3460264="">雨城</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737533429369_1737533446.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">异星巡航机</div>
+                                        <div class="game-desc" data-v-b3460264="">横版飞行设计为主的独立游戏</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200130" data-v-b3460264="">异星巡航机</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;image&#47;960x600_1737533792754_1737533829.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">小三角大英雄</div>
+                                        <div class="game-desc" data-v-b3460264="">目前最好的国产平台跳跃游戏！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200129" data-v-b3460264="">小三角大英雄</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;dialog&#47;bg&#47;960x600_1737536785447_1737536927.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">网球世界巡回赛</div>
+                                        <div class="game-desc" data-v-b3460264="">开启你的职业网球生涯！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200061" data-v-b3460264="">网球世界巡回赛</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600686_1742352579.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">龙息：神寂</div>
+                                        <div class="game-desc" data-v-b3460264="">书写自己的屠龙冒险史诗</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600686" data-v-b3460264="">龙息：神寂</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_600603_1739871398.compressed.jpg);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">仙剑世界</div>
+                                        <div class="game-desc" data-v-b3460264="">这一葫一剑，承载少年遨游！</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/600603" data-v-b3460264="">仙剑世界</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;game&#47;landscape&#47;960x600_200133_1735809685.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">基因雨</div>
+                                        <div class="game-desc" data-v-b3460264="">3D第三人称次时代射击游戏</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/200133" data-v-b3460264="">基因雨</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-item-box" data-v-c190a620="">
+                                <div class="game-item-card-wrap v-101 webpc" data-v-b3460264="" data-v-c190a620="">
+                                    <div class="game-tag" data-v-b3460264="">
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    <!--v-if-->
+                                    </div>
+                                    <div class="game-thumb" style="background-image: url(https:&#47;&#47;start.gtimg.com&#47;client&#47;icon&#47;980000&#47;960x600_980000_1737552763.compressed.png);" data-v-b3460264=""></div>
+                                    <div class="game-container" data-v-b3460264="">
+                                        <div class="game-label" data-v-b3460264="">云电脑（时长通用）</div>
+                                        <div class="game-desc" data-v-b3460264="">更多PC大作，尽在云电脑</div>
+                                    </div>
+                                    <div class="pop" data-v-b3460264="">
+                                        <div class="game-image" style="background-image: url();" data-v-b3460264=""></div>
+                                        <div class="content" data-v-b3460264="">
+                                            <a class="title" href="/webgame/gamedetail/980000" data-v-b3460264="">云电脑（时长通用）</a>
+                                            <div class="tags" data-v-b3460264=""></div>
+                                            <div class="platfrom" data-v-b3460264="">
+                                                <div class="name" data-v-b3460264="">多端畅玩 :</div>
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                                <!--v-if-->
+                                            </div>
+                                            <div class="btn-box" data-v-b3460264="">
+                                                <div class="btn download" data-v-b3460264="">
+                                                    下载客户端<br data-v-b3460264=""></br>
+                                                    <span data-v-b3460264="">暂不支持网页端</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--v-if-->
+                <div class="t-download" data-v-3bfdfb30="" data-v-65ac2972="">
+                    <div class="t-download-box" data-v-3bfdfb30="">
+                        <div class="title" data-v-3bfdfb30="">
+                            <span data-v-3bfdfb30="">下载START云游戏客户端</span>
+                        </div>
+                        <div class="sub-title" data-v-3bfdfb30="">游戏更多，体验更佳！</div>
+                        <div class="image" data-v-3bfdfb30=""></div>
+                        <div class="btns" data-v-3bfdfb30="">
+                            <!--v-if-->
+                            <!--v-if-->
+                            <div class="other" data-v-3bfdfb30="">
+                                <div class="item" data-v-3bfdfb30="">
+                                    <div class="mac-download-box" data-v-3bfdfb30="">
+                                        <div class="mac-download" data-v-3bfdfb30="">
+                                            <div class="download-item" data-v-3bfdfb30="">
+                                                <div class="text" data-v-3bfdfb30="">适用于Intel芯片的机型</div>
+                                                <div class="btn" data-v-3bfdfb30="">下载x86版</div>
+                                            </div>
+                                            <div class="download-item" data-v-3bfdfb30="">
+                                                <div class="text" data-v-3bfdfb30="">适用于M1芯片的机型</div>
+                                                <div class="btn" data-v-3bfdfb30="">下载ARM版</div>
+                                            </div>
+                                            <div class="tip" data-v-3bfdfb30="">*左上角Apple菜单打开“关于本机”，可查看芯片类型</div>
+                                        </div>
+                                    </div>
+                                    <div class="icon mac" data-v-3bfdfb30=""></div>
+                                    Mac版 
+                                </div>
+                                <div class="item" data-v-3bfdfb30="">
+                                    <div class="icon win" data-v-3bfdfb30=""></div>
+                                    Windows版 
+                                </div>
+                                <div class="item" data-v-3bfdfb30="">
+                                    <div class="qrcode-box" data-v-3bfdfb30="">
+                                        <div class="qrcode" data-v-3bfdfb30="">
+                                            <div class="tip" data-v-3bfdfb30="">手机扫码畅玩</div>
+                                            <img class="qrcode-img" src="https://start.gtimg.com/web/www/webgame/assets/img/bb7f5fac01b8ca5c35ed.png" alt="" data-v-3bfdfb30=""></img>
+                                        </div>
+                                    </div>
+                                    <div class="icon android" data-v-3bfdfb30=""></div>
+                                    Android版 
+                                </div>
+                                <div class="item" data-v-3bfdfb30="">
+                                    <div class="icon tv" data-v-3bfdfb30=""></div>
+                                    TV版 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-subscribe" data-v-16e43d0b="" data-v-65ac2972="">
+                    <div class="t-subscribe-box" data-v-16e43d0b="">
+                        <div class="item name" data-v-16e43d0b="">关注我们</div>
+                        <div class="item icon icon-wx" data-v-16e43d0b="">
+                            <div class="qrcode-box" data-v-16e43d0b="">
+                                <div class="qrcode" data-v-16e43d0b="">
+                                    <img class="qrcode-img" src="https://start.gtimg.com/web/www/webgame/assets/img/9d88c0759df8f9cb766d.png" alt="" data-v-16e43d0b=""></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item icon icon-wb" data-v-16e43d0b="">
+                            <div class="qrcode-box" data-v-16e43d0b="">
+                                <div class="qrcode" data-v-16e43d0b="">
+                                    <img class="qrcode-img" src="https://start.gtimg.com/web/www/webgame/assets/img/e91b74f3204eb248f75f.png" alt="" data-v-16e43d0b=""></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-footer" data-v-27e6b375="" data-v-65ac2972="">
+                    <div class="t-footer-box" data-v-27e6b375="">
+                        <div class="left" data-v-27e6b375="">
+                            <a class="left-item" href="https://www.tencent.com/zh-cn/" target="_blank" data-v-27e6b375="">腾讯公司</a>
+                            <a class="left-item" href="https://www.tencent.com/zh-cn/statement.html?/law/copyright.htm" target="_blank" data-v-27e6b375="">版权所有</a>
+                            <div class="left-item coop" data-v-27e6b375="">
+                                合作联系 
+                                <div class="coop-box" data-v-27e6b375="">
+                                    <div class="coop-container" data-v-27e6b375="">
+                                        <div class="coop-list" data-v-27e6b375="">
+                                            <div data-v-27e6b375="">START ENGINE合作</div>
+                                            <a target="_blank" href="mailto:startengine@tencent.com" data-v-27e6b375="">startengine@tencent.com</a>
+                                        </div>
+                                        <div class="coop-list" data-v-27e6b375="">
+                                            <div data-v-27e6b375="">硬件厂商合作</div>
+                                            <a target="_blank" href="mailto:startcoop@tencent.com" data-v-27e6b375="">startcoop@tencent.com</a>
+                                        </div>
+                                        <div class="coop-list" data-v-27e6b375="">
+                                            <div data-v-27e6b375="">游戏内容及其他合作</div>
+                                            <a target="_blank" href="mailto:startgame@tencent.com" data-v-27e6b375="">startgame@tencent.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left-item" href="https://my.start.qq.com/agreement/guidelines.html" target="_blank" data-v-27e6b375="">指引与规范</a>
+                            <a class="left-item" href="https://start.qq.com/job.html" target="_blank" data-v-27e6b375="">
+                                人才招募 <img class="item-icon" src="https://start.gtimg.com/web/www/webgame/assets/img/f4df5243190e1a39b1e7.svg" data-v-27e6b375=""></img>
+                            </a>
+                            <a class="left-item" href="" data-v-27e6b375="">
+                                反馈帮助 <img class="item-icon" src="https://start.gtimg.com/web/www/webgame/assets/img/274807466ae875bee3f6.svg" data-v-27e6b375=""></img>
+                            </a>
+                        </div>
+                        <div class="right" data-v-27e6b375="">Copyright 1998 - 2023 Tencent. All Rights Reserved</div>
+                    </div>
+                    <div class="t-footer-placeholder" data-v-27e6b375=""></div>
+                </div>
+            .
+        </div>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-43dd7041.1e5a457d2065dc3adc2b.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-73969abc.94d6f32bc58359b586b9.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-7fc2cac8.53238a4c9c06f32fe0f8.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-49d0a293.27b5800ef84ce705c738.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-3062047c.6d5a6285b0bc105998c0.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-d2eb5610.3781172d08c5a074a479.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-27545368.94bae6bab9eed00e62d3.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-866ab763.8f4579b83ade50828f23.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-9dd26f51.7e8145d41646f74217f6.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-e96e9bea.9f7fc42c33cd85348c99.js"></script>
+        <script crossorigin="anonymous" defer="defer" src="https://start.gtimg.com/web/www/webgame/assets/js/main-182f79bf.3ddbca35e6a03a8f0ad9.js"></script>
+        <script>
+            try {
+                window.__START_PRE_CATCH_MAP__
+            } catch (e) {//
+            }
+        </script>
+        <div id="white-screen-detection-completed" style="display: none;"></div>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页版快手 - 完整功能</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 原有CSS保持不变 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #ff5e3a;
+            --secondary-color: #ff9500;
+            --bg-color: #f8f8f8;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+            --border-color: #eeeeee;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        
+        /* 顶部导航栏 */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .logo i {
+            margin-right: 8px;
+        }
+        
+        .search-bar {
+            flex: 1;
+            max-width: 400px;
+            margin: 0 20px;
+            position: relative;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            background-color: #f5f5f5;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .search-bar i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            cursor: pointer;
+        }
+        
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-icons .icon {
+            margin-left: 20px;
+            font-size: 20px;
+            color: var(--text-color);
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .nav-icons .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        
+        .nav-icons .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* 主内容区域 */
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 70px auto 20px;
+        }
+        
+        /* 侧边栏 */
+        .sidebar {
+            width: 220px;
+            padding: 20px 10px;
+            position: sticky;
+            top: 70px;
+            height: calc(100vh - 90px);;
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
