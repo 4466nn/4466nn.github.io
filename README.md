@@ -213,7 +213,7 @@
                 <div class="card-body">
                     <h3>UI/UX 设计</h3>
                     <p>我们提供专业的用户界面和用户体验设计服务，帮助您创建直观且吸引人的数字产品。</p>
-                    <a href="#" class="btn">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://start.qq.com/h5game/home?ADTAG=0 " class="btn">start <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
@@ -225,7 +225,7 @@
                 <div class="card-body">
                     <h3>响应式网站</h3>
                     <p>使用最新技术构建响应式网站，确保在所有设备上都能提供完美的浏览体验。</p>
-                    <a href="#" class="btn">查看案例 <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/4466nn/4466nn.github.io/tree/0bfc6ba9a6d1d7c6c354d741f49176a835d3e6bc/%E6%B8%B8%E6%88%8F  " class="btn">查看案例 <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             
