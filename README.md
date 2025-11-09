@@ -238,7 +238,7 @@
                 <div class="card-body">
                     <h3>数字营销</h3>
                     <p>通过全面的数字营销策略提升您的在线影响力，吸引更多潜在客户。</p>
-                    <a href="https://github.com/4466nn/4466nn.github.io/tree/f37df784e605d592c903e3baaee8a0a2c37a5b69/%E6%B8%B8%E6%88%8F" class="btn btn-outline">获取方案 <i class="fas fa-chart-line"></i></a>
+                    <a href="https://github.com/4466nn/4466nn.github.io/tree/9ecb318eeaea34df0707a51ca0f6c7e856af0c52/%E6%B8%B8%E6%88%8F/%E8%BD%AF%E4%BB%B6" class="btn btn-outline">获取方案 <i class="fas fa-chart-line"></i></a>
                 </div>
             </div>
         </div>
