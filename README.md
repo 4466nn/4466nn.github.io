@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 软件> </title>
+    <title>软件系统 - 电脑版</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -20,6 +21,7 @@
             --light: #F8F9FA;
             --dark: #2D3047;
             --gray: #8A8D93;
+            --animation-speed: 0.4s;
         }
         
         body {
@@ -61,7 +63,7 @@
         
         .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -83,18 +85,19 @@
             display: none;
         }
         
-        /* 手机状态栏 */
-        .phone-status-bar {
+        /* 电脑状态栏 */
+        .desktop-status-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
             background: rgba(0, 0, 0, 0.3);
-            border-radius: 15px 15px 0 0;
+            border-radius: 10px;
             margin-bottom: 20px;
             backdrop-filter: blur(10px);
             font-size: 0.9rem;
             transition: all 0.3s ease;
+            width: 100%;
         }
         
         .status-left {
@@ -106,6 +109,7 @@
         
         .status-center {
             font-weight: bold;
+            font-size: 1.1rem;
         }
         
         .status-right {
@@ -146,7 +150,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
-            padding: 20px 30px;
+            padding: 25px 40px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             backdrop-filter: blur(15px);
@@ -161,20 +165,20 @@
         }
         
         .logo {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 12px;
             background: var(--primary);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 28px;
             color: white;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
         
         .title-group h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             background: linear-gradient(to right, #fff, #e0e0ff);
             -webkit-background-clip: text;
             background-clip: text;
@@ -183,7 +187,7 @@
         }
         
         .subtitle {
-            font-size: 1rem;
+            font-size: 1.1rem;
             opacity: 0.9;
         }
         
@@ -196,24 +200,24 @@
         .year-badge {
             background: var(--accent);
             color: white;
-            padding: 8px 15px;
+            padding: 10px 20px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: bold;
         }
         
-        /* 紧凑的应用图标 */
+        /* 紧凑的应用图标 - 电脑版布局 */
         .apps-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 25px;
             margin-bottom: 40px;
         }
         
         .app-item {
             background: rgba(255, 255, 255, 0.15);
             border-radius: 18px;
-            padding: 20px 10px;
+            padding: 25px 15px;
             text-align: center;
             transition: all 0.3s ease;
             cursor: pointer;
@@ -233,20 +237,20 @@
         }
         
         .app-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 15px;
-            margin: 0 auto 12px;
+            width: 70px;
+            height: 70px;
+            border-radius: 18px;
+            margin: 0 auto 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 26px;
+            font-size: 28px;
             color: white;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
         
         .app-name {
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 600;
         }
         
@@ -261,41 +265,45 @@
         }
         
         .add-icon {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            margin: 0 auto 12px;
+            margin: 0 auto 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
+            font-size: 32px;
             color: white;
             background: rgba(255, 255, 255, 0.2);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
         
-        /* 底部弹出窗口通用样式 */
+        /* 电脑版弹出窗口 */
         .modal-section {
             background: rgba(255, 255, 255, 0.1);
             padding: 30px;
-            border-radius: 20px 20px 0 0;
+            border-radius: 20px;
             margin-top: 30px;
-            box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            width: 100%;
+            width: 600px;
             position: fixed;
-            bottom: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
             z-index: 10;
-            transform: translateY(100%);
-            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             max-height: 80vh;
             overflow-y: auto;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--animation-speed) cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
         
         .active-section {
-            transform: translateY(0);
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+            visibility: visible;
         }
         
         h2 {
@@ -382,10 +390,14 @@
             align-items: center;
             background: rgba(255, 255, 255, 0.15);
             border-radius: 10px;
-            padding: 8px 15px;
+            padding: 10px 20px;
             margin-bottom: 25px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .search-container i {
@@ -409,16 +421,18 @@
             box-shadow: none;
         }
         
-        /* 手机底部导航栏 */
-        .phone-nav {
+        /* 电脑底部导航栏 */
+        .desktop-nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            gap: 30px;
             padding: 15px 0;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 0 0 15px 15px;
+            border-radius: 15px;
             margin-top: 20px;
             backdrop-filter: blur(10px);
+            width: 100%;
         }
         
         .nav-item {
@@ -426,33 +440,49 @@
             flex-direction: column;
             align-items: center;
             gap: 5px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             cursor: pointer;
-        }
-        
-        .nav-item i {
-            font-size: 1.2rem;
-        }
-        
-        /* 页面指示器 */
-        .page-indicator {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin: 20px 0;
-        }
-        
-        .indicator-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 10px;
             transition: all 0.3s ease;
         }
         
-        .indicator-dot.active {
-            background: rgba(255, 255, 255, 0.9);
-            transform: scale(1.2);
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-item i {
+            font-size: 1.4rem;
+        }
+        
+        /* 分页样式 */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .page-btn {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .page-btn.active {
+            background: var(--primary);
+        }
+        
+        .page-btn:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.25);
         }
         
         /* 遮罩层 */
@@ -514,34 +544,15 @@
             cursor: pointer;
         }
         
-        /* 分页样式 */
-        .pagination {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        
-        .page-btn {
-            background: rgba(255, 255, 255, 0.15);
-            color: white;
-            border: none;
-            width: 35px;
-            height: 35px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .page-btn.active {
-            background: var(--primary);
-        }
-        
-        .page-btn:hover:not(.active) {
-            background: rgba(255, 255, 255, 0.25);
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 95%;
+            }
+            
+            .apps-container {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                gap: 20px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -565,6 +576,7 @@
             }
             
             .modal-section {
+                width: 90%;
                 padding: 20px;
             }
         }
@@ -579,13 +591,13 @@
     <div class="overlay" id="overlay"></div>
     
     <div class="container">
-        <!-- 手机状态栏 -->
-        <div class="phone-status-bar" id="phoneStatusBar">
+        <!-- 电脑状态栏 -->
+        <div class="desktop-status-bar" id="desktopStatusBar">
             <div class="status-left">
                 <i class="fas fa-signal"></i>
                 <span id="current-time">--:--</span>
             </div>
-            <div class="status-center">应用系统</div>
+            <div class="status-center">应用系统 - 电脑版</div>
             <div class="status-right">
                 <i class="fas fa-wifi"></i>
                 <div class="battery">
@@ -598,7 +610,16 @@
         <div class="page-container" id="pageContainer">
             <!-- 主页面 -->
             <div class="page" id="mainPage">
-                                  </div>
+                <div class="header-row">
+                    <div class="header-left">
+                        <div class="logo">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="title-group">
+                            <h1>我的应用系统</h1>
+                            <div class="subtitle">一站式访问您最喜爱的应用</div>
+                        </div>
+                    </div>
                     <div class="header-right">
                         <div class="year-badge">2025 最新版</div>
                     </div>
@@ -620,8 +641,8 @@
                     <!-- 分页按钮将通过JavaScript动态生成 -->
                 </div>
                 
-                <!-- 手机底部导航栏 -->
-                <div class="phone-nav">
+                <!-- 电脑底部导航栏 -->
+                <div class="desktop-nav">
                     <div class="nav-item" data-page="main">
                         <i class="fas fa-home"></i>
                         <span>首页</span>
@@ -632,24 +653,22 @@
                     </div>
                     <div class="nav-item" id="addAppNav">
                         <i class="fas fa-plus-circle"></i>
-                        <span>添加</span>
+                        <span>添加应用</span>
                     </div>
                     <div class="nav-item" id="settingsNav">
                         <i class="fas fa-cog"></i>
-                        <span>设置</span>
+                        <span>系统设置</span>
                     </div>
                 </div>
             </div>
         </div>
         
-        <footer>
-            <p>© 2025 我的应用系统 | 点击应用图标即可访问 | 版本 2.5</p>
-        </footer>
+        
     </div>
     
-    <!-- 添加应用的表单部分 - 底部弹出 -->
+    <!-- 添加应用的表单部分 - 居中弹出 -->
     <div class="modal-section" id="addAppSection">
-        <div class="phone-status-bar">
+        <div class="desktop-status-bar">
             <div class="status-left">
                 <i class="fas fa-arrow-left" id="backBtnAdd"></i>
                 <span id="add-page-time">--:--</span>
@@ -688,9 +707,9 @@
         </div>
     </div>
     
-    <!-- 设置页面 - 底部弹出 -->
+    <!-- 设置页面 - 居中弹出 -->
     <div class="modal-section" id="settingsSection">
-        <div class="phone-status-bar">
+        <div class="desktop-status-bar">
             <div class="status-left">
                 <i class="fas fa-arrow-left" id="backBtnSettings"></i>
                 <span id="settings-page-time">--:--</span>
@@ -738,10 +757,10 @@
             <div class="settings-item">
                 <label for="appLimit">每页应用数量</label>
                 <select id="appLimit">
-                    <option value="6">6个</option>
-                    <option value="8">8个</option>
-                    <option value="10" selected>10个</option>
                     <option value="12">12个</option>
+                    <option value="16">16个</option>
+                    <option value="20" selected>20个</option>
+                    <option value="24">24个</option>
                 </select>
             </div>
             
@@ -777,7 +796,12 @@
             { name: "微博", url: "https://weibo.com", color: "#E6162D" },
             { name: "知乎", url: "https://www.zhihu.com", color: "#0084FF" },
             { name: "百度", url: "https://www.baidu.com", color: "#2932E1" },
-            { name: "京东", url: "https://www.jd.com", color: "#E33333" }
+            { name: "京东", url: "https://www.jd.com", color: "#E33333" },
+            { name: "网易云音乐", url: "https://music.163.com", color: "#E60026" },
+            { name: "腾讯视频", url: "https://v.qq.com", color: "#1E6BFF" },
+            { name: "爱奇艺", url: "https://www.iqiyi.com", color: "#00BE06" },
+            { name: "B站", url: "https://www.bilibili.com", color: "#FB7299" },
+            { name: "钉钉", url: "https://www.dingtalk.com", color: "#0086FF" }
         ];
         
         // 默认设置
@@ -786,7 +810,7 @@
             backgroundImage: null,
             backgroundColor: '#1a2a6c',
             statusBarStyle: 'dark',
-            appLimit: 10,
+            appLimit: 20,
             animationSpeed: 'normal'
         };
         
@@ -814,7 +838,7 @@
         const settingsNav = document.getElementById('settingsNav');
         const searchNav = document.getElementById('searchNav');
         const backgroundLayer = document.getElementById('backgroundLayer');
-        const phoneStatusBar = document.getElementById('phoneStatusBar');
+        const desktopStatusBar = document.getElementById('desktopStatusBar');
         const pagination = document.getElementById('pagination');
         
         // 设置相关的DOM元素
@@ -869,11 +893,11 @@
             
             // 应用状态栏样式
             if (settings.statusBarStyle === 'light') {
-                phoneStatusBar.style.color = '#000';
-                phoneStatusBar.style.background = 'rgba(255, 255, 255, 0.7)';
+                desktopStatusBar.style.color = '#000';
+                desktopStatusBar.style.background = 'rgba(255, 255, 255, 0.7)';
             } else if (settings.statusBarStyle === 'dark') {
-                phoneStatusBar.style.color = '#fff';
-                phoneStatusBar.style.background = 'rgba(0, 0, 0, 0.3)';
+                desktopStatusBar.style.color = '#fff';
+                desktopStatusBar.style.background = 'rgba(0, 0, 0, 0.3)';
             } else {
                 // 自动模式，根据背景亮度决定
                 const bgColor = settings.backgroundColor || '#1a2a6c';
@@ -884,11 +908,11 @@
                 const brightness = (r * 299 + g * 587 + b * 114) / 1000;
                 
                 if (brightness > 128) {
-                    phoneStatusBar.style.color = '#000';
-                    phoneStatusBar.style.background = 'rgba(255, 255, 255, 0.7)';
+                    desktopStatusBar.style.color = '#000';
+                    desktopStatusBar.style.background = 'rgba(255, 255, 255, 0.7)';
                 } else {
-                    phoneStatusBar.style.color = '#fff';
-                    phoneStatusBar.style.background = 'rgba(0, 0, 0, 0.3)';
+                    desktopStatusBar.style.color = '#fff';
+                    desktopStatusBar.style.background = 'rgba(0, 0, 0, 0.3)';
                 }
             }
             
